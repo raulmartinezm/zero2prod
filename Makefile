@@ -1,4 +1,4 @@
-.PHONY: install-tools test
+.PHONY: install-tools test clippy
 
 install-tools:
 	cargo install cargo-edit
@@ -6,3 +6,6 @@ install-tools:
 
 test:
 	cargo test
+
+clippy:
+	cargo clippy -- -D warnings
